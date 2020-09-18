@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in spring.gemspec
+# Specify your gem's dependencies in nrispring.gemspec
 gemspec
 
 if ENV["RAILS_VERSION"]

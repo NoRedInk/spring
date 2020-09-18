@@ -1,7 +1,7 @@
 require './lib/spring/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "spring"
+  gem.name          = "nrispring"
   gem.version       = Spring::VERSION
   gem.authors       = ["Jon Leighton"]
   gem.email         = ["j@jonathanleighton.com"]
