@@ -29,6 +29,10 @@ CODE
 # This file loads Spring without using Bundler, in order to be fast.
 # It gets overwritten when you run the `spring binstub` command.
 
+# our nri environment is TOO DAMN LONG.
+# without this, we often get Argument List Too Long errors
+ENV.reject! { |key, _| key.start_with?("NIX_") || key.start_with?("DIRENV_") || key == "PYTHONPATH" }
+
 unless defined?(Spring)
   require 'rubygems'
   require 'bundler'
